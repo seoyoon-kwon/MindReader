@@ -1,7 +1,5 @@
 import {NgModule} from "@angular/core";
-import {AppComponent} from "../app.component";
 import {TestComponent} from "./test.component";
-import {BrowserModule} from "@angular/platform-browser";
 import {RouterModule} from "@angular/router";
 import {SharedModule} from "../../shared/shared.module";
 
@@ -11,7 +9,6 @@ import {SharedModule} from "../../shared/shared.module";
   ],
   imports: [
     SharedModule,
-    BrowserModule,
     RouterModule.forChild([
       {
         path: 'test-page',
