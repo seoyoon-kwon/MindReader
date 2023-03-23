@@ -2,17 +2,16 @@ import {NgModule} from "@angular/core";
 import {AppComponent} from "../app.component";
 import {TestComponent} from "./test.component";
 import {BrowserModule} from "@angular/platform-browser";
-import {SharedModule} from "../../shared/shared.module";
 import {RouterModule} from "@angular/router";
+import {SharedModule} from "../../shared/shared.module";
 
 @NgModule({
   declarations: [
-    AppComponent,
     TestComponent
   ],
   imports: [
-    BrowserModule,
     SharedModule,
+    BrowserModule,
     RouterModule.forChild([
       {
         path: 'test-page',

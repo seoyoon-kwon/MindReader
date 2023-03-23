@@ -13,7 +13,6 @@ const routes: Routes = [
       {
         path: 'test',
         loadChildren: () => import('./test/test.module').then(i => i.TestModule),
-
       }
     ]
   }
@@ -21,7 +20,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    SharedModule,
     RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules, useHash: true}),
 
   ],
